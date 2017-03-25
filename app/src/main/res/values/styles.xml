@@ -9,9 +9,20 @@
     </style>
 
 
+
+    <style name="root_view">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">#10f1c40f</item>
+    </style>
+
+
     <style name="input_user_name">
         <item name="android:hint">Name</item>
         <item name="android:inputType">textCapWords</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:padding">20dp</item>
     </style>
 
     <style name="check_box_name">
@@ -26,12 +37,24 @@
         <item name="android:text">Category : Animal\'s </item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
         <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="linear_questions" >
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:drawable/dialog_holo_light_frame</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
     <!--    questions 1st -->
     <style name="question1" parent="categories">
+        <item name="android:padding">20dp</item>
+        <item name="android:background">#102ecc71</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:text">1. What does the Duck said ?</item>
         <item name="android:layout_marginBottom">10dp</item>
     </style>
@@ -40,23 +63,25 @@
     <style name="radio_group_choices">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">20dp</item>
     </style>
 
     <!-- radio button -->
     <style name="quack">
         <item name="android:paddingLeft">10dp</item>
-        <item name="android:text">quack ! quack ! quack !</item>
+        <item name="android:text"> a. quack ! quack ! quack !</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:textAppearance">?android:textAppearanceListItem</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:padding">10dp</item>
     </style>
     <style name="squeak" parent="quack">
-        <item name="android:text">squeak ! squeak ! squeak !</item>
+        <item name="android:text"> b. squeak ! squeak ! squeak !</item>
     </style>
 
     <style name="cluck" parent="quack">
-        <item name="android:text">cluck ! cluck ! cluck !</item>
+        <item name="android:text"> c. cluck ! cluck ! cluck !</item>
     </style>
 
     <!--    questions 2nd -->
@@ -66,15 +91,15 @@
     </style>
 
     <style name="oink" parent="quack">
-        <item name="android:text">oink ! oink ! oink !</item>
+        <item name="android:text"> a. oink ! oink ! oink !</item>
     </style>
 
     <style name="meh" parent="quack">
-        <item name="android:text">meh ! meh ! meh !</item>
+        <item name="android:text"> b. meh ! meh ! meh !</item>
     </style>
 
     <style name="baa" parent="quack">
-        <item name="android:text">baa ! baa ! baa !</item>
+        <item name="android:text"> c. baa ! baa ! baa !</item>
     </style>
 
 
@@ -84,15 +109,15 @@
     </style>
 
     <style name="neigh" parent="quack">
-        <item name="android:text">neigh ! neigh ! neigh !</item>
+        <item name="android:text"> a. neigh ! neigh ! neigh !</item>
     </style>
 
     <style name="moo" parent="quack">
-        <item name="android:text">moo ! moo ! moo !</item>
+        <item name="android:text"> b. moo ! moo ! moo !</item>
     </style>
 
     <style name="cock_a_doodle_doo" parent="quack">
-        <item name="android:text">cock-a-doodle-doo !</item>
+        <item name="android:text"> c. cock-a-doodle-doo !</item>
     </style>
 
 
@@ -102,40 +127,47 @@
     </style>
 
     <style name="frog" parent="quack">
-        <item name="android:text">frog !</item>
+        <item name="android:text"> a. frog </item>
     </style>
 
     <style name="monkey" parent="quack">
-        <item name="android:text">monkey !</item>
+        <item name="android:text"> b. monkey </item>
     </style>
 
     <style name="kangaroo" parent="quack">
-        <item name="android:text">kangaroo !</item>
+        <item name="android:text"> c. kangaroo </item>
     </style>
 
     <!--    questions 4th-->
     <style name="question5" parent="question2">
-        <item name="android:text">5. On the novel nursery book which of the following is very hungry ?</item>
+        <item name="android:text">5. On the nursery novel book which of the following is very hungry ?</item>
     </style>
 
 
     <style name="fly" parent="quack">
-        <item name="android:text">fly !</item>
+        <item name="android:text"> a. fly </item>
     </style>
 
     <style name="pig" parent="quack">
-        <item name="android:text">pig !</item>
+        <item name="android:text"> b. pig </item>
     </style>
 
     <style name="caterpillar" parent="quack">
-        <item name="android:text">caterpillar !</item>
+        <item name="android:text"> c. caterpillar </item>
     </style>
 
 
     <style name="submit">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:text">Submit</item>
         <item name="android:onClick">submit</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:radius">5dp</item>
     </style>
 
 </resources>

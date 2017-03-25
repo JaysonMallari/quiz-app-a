@@ -9,7 +9,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
+    String name;
     int[] answer = { R.id.quack, R.id.meh, R.id.cock_a_doodle_doo, R.id.monkey, R.id.caterpillar};
 
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkedName(View v){
         EditText userName  = (EditText) findViewById(R.id.user_name);
-        String name  = userName.getText().toString();
+        name  = userName.getText().toString();
         CheckBox checkBoxName = (CheckBox) findViewById(R.id.check_name);
         checkBoxName.setText("Welcome to Quiz App " +name+ " and Goodluck !");
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        String output = "Your Score is "+total+"/5 .";
+        String output = name + " Score is "+total+"/5 .";
         Toast.makeText(getApplicationContext(),output ,Toast.LENGTH_LONG).show();
 
     }
